@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 100%;
+
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////header */
+
+
+
+.header {
+  display: flex;
+  position: relative;
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #5a4610; /* Adjusted to match JustWatch background */
+  color: #f8fafc; /* Soft White */
+  /* position: relative; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; Ensures it stays on top
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Adjust to match JustWatch */
+  display: flex;
+  align-items: center;
+  gap: -1px;
+  color: #d4a000; /* Darker Gold */
+}
+
+.logo svg { 
+  color: #c28e00; /* Slightly darker shade for the icon */
+  font-size: 1.8rem;
+}
+
+
+
+/* ✅ Navigation Links */
+.nav-links {
+  display: flex;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #f5deb3; /* Light Gold/Beige like JustWatch */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #ffcc00; /* Gold on hover */
+}
+
+/* ✅ Hamburger Menu Button */
+.menu-btn {
+  background: none;
+  border: none;
+  color: #f5deb3;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* ✅ Hidden on large screens */
+  position: relative;
+  z-index: 1000;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block; /* ✅ Show hamburger on small screens */
+  }
+
+  .nav-links {
+    display: none; /* ✅ Hide menu by default */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #5a4610; /* Match navbar background */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: block; /* ✅ Show when menu is open */
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+}
+
+
+/* ////////////////////////////// hero section    */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+/* Left Side - Text */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #aaa;
+}
+
+/* Button */
+.cta-button {
+  background: yellow;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta-button:hover {
+  background: gold;
+}
+
+/* Right Side - Image */
+.hero-image {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  animation: moveUpDown 2s infinite ease-in-out; /* Apply the animation */
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  margin-left: -20%;
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.2));
+}
+
+/* Define the up and down animation */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .hero {
+    /* margin-top: 300px; */
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+/*             feature section        */
+
+
+/* 
+
+.Feaature{
+background-color: rgb(33, 32, 32);
+
+
+}
+
+.Allfeature{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+  
+}
+
+
+
+ */
+
+
+ /* Wrapper for all feature cards */
+
+ .Feaature-headline{
+  text-align:center;
+  font-size: xx-large;
+  padding-top: 50px;
+
+} 
+
+.Allfeature {
+  display: flex; /* Flexbox to lay out the cards */
+  flex-wrap: wrap; /* Allows cards to wrap to the next row */
+  justify-content: space-between; /* Distribute cards evenly */
+  gap: 20px; /* Space between the cards */
+  padding: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .Allfeature {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center the cards */
+  }
+}
+
+/* Feature Card Styling */
+.Feature-card {
+  background-color: #1a1a1a;
+  color: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.Feature-card-icon {
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: brown;
+  background-color: #333;
+}
+
+.Feature-title-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.Feature-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+
+
+
