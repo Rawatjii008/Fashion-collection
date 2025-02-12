@@ -1,7 +1,7 @@
 import React from "react";
 import {AboutImg} from "../Constant/Allimages"
 
-import './About.css'
+import '../Style/About.css'
 const About = () => {
   return (
     <section className="about" id="abo">
@@ -9,15 +9,12 @@ const About = () => {
         <img src={AboutImg} alt="Smartwatch" />
       </div>
       <div className="about-content">
-        <h2>About Our Smartwatch</h2>
+        <h2>About Our Fashion Collection</h2>
         <p>
-          Our latest smartwatch combines style, innovation, and functionality. With 
-          advanced health tracking, seamless connectivity, and a sleek design, it's 
-          perfect for your everyday needs.
+        Our latest fashion collection combines style, innovation, and comfort. Designed with premium fabrics and smart tailoring, it adapts effortlessly to your everyday needs.
         </p>
         <p>
-          Stay ahead with real-time notifications, music storage, and a long-lasting 
-          battery. Elevate your lifestyle with cutting-edge technology at your wrist.
+        Stay ahead with breathable materials, versatile designs, and a perfect balance of elegance and functionality. Elevate your wardrobe with fashion that blends sophistication and convenience.
         </p>
       </div>
     </section>

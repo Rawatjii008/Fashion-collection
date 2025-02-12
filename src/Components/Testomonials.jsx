@@ -1,12 +1,12 @@
 import React from 'react';
-import './Testnomials.css';
+import '../Style/Testnomials.css';
 import Customers from '../Constant/Customers';
 
 const Testimonial = () => {
  
   return (
     <div className="testimonial-section">
-      <h1 className="testimonial-heading">Testimonials</h1>
+      <h1 className="testimonial-heading">Our Customers</h1>
       <p className="customer-trust">10k+ Customers Trust Us</p>
       <div className="testimonial-container">
         {Customers.map((testimonial, index) => (

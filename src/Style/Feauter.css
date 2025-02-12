@@ -1,0 +1,60 @@
+/* Feature Section */
+.FeatureContainer {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #121313; /* Light grey background */
+  }
+  
+  .FeatureHeadline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffcc00; /* Dark text */
+  }
+  
+  /* Feature Grid */
+  .FeatureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+  }
+  
+  /* Feature Card */
+  .FeatureCard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .FeatureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Feature Title */
+  .FeatureTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:  #ffcc00; /* Deep navy blue */
+  }
+  
+  /* Feature Description */
+  .FeatureDescription {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .FeatureGrid {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  }
+  

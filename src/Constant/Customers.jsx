@@ -1,19 +1,24 @@
 const Customers = [
-    {
-      name: "John Doe",
-      image: "https://randomuser.me/api/portraits/men/1.jpg", // Placeholder image
-      text: "JustWatch offers a seamless experience, and their customer service is top-notch. I’m a loyal customer for life!",
-    },
-    {
-      name: "Jane Smith",
-      image: "https://randomuser.me/api/portraits/women/2.jpg", // Placeholder image
-      text: "I love the variety of products and the amazing services. Highly recommend JustWatch to everyone!",
-    },
-    {
-      name: "Mike Johnson",
-      image: "https://randomuser.me/api/portraits/men/3.jpg", // Placeholder image
-      text: "The quality of service is exceptional, and I’ve always had a fantastic experience with JustWatch.",
-    },
+  {
+    name: "Emma Williams",
+    image: "https://randomuser.me/api/portraits/women/5.jpg", 
+    text: "The Fashion Collection offers the perfect blend of style and comfort. I feel confident and elegant every time I wear their outfits!",
+  },
+  {
+    name: "James Anderson",
+    image: "https://randomuser.me/api/portraits/men/6.jpg", 
+    text: "Amazing fabric quality and versatile designs! Whether it's casual or formal, I always find the perfect outfit.",
+  },
+  {
+    name: "Sophia Martinez",
+    image: "https://randomuser.me/api/portraits/women/7.jpg", 
+    text: "I love how effortless and stylish these clothes make me feel. The attention to detail is incredible!",
+  },
+  {
+    name: "Daniel Carter",
+    image: "https://randomuser.me/api/portraits/men/8.jpg", // Placeholder image
+    text: "These clothes are a game-changer! The comfort, design, and durability make them my go-to choice for any occasion.",
+  },
   ];
 
   export default Customers

@@ -1,6 +1,5 @@
 import { useState } from "react";  // ✅ Import useState
 import { GiHamburgerMenu } from "react-icons/gi";
-import { BiShapeTriangle } from "react-icons/bi";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo"><BiShapeTriangle/>JustWatch </div>
+      <div className="logo"><i class="fa-solid fa-vest-patches"> <span>Fashion Collection</span></i> </div>
 
       {/* ✅ Hamburger Menu Button */}
       <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
